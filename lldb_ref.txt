@@ -1,0 +1,16 @@
+run [args] 用args参数启动你的程序。
+breakpoint set --name [file:]function 在[file:]function处设置一个断点。（可以简写为b）
+thread backtrace|bt 转储当前调用栈的回溯信息。
+print|p expr 打印expr的值。
+continue|c 继续运行程序。
+next|n 下一行，但碰到函数调用时单步跳过(step over)。
+step|s 下一行，但碰到函数调用时单步进入(step into)。
+quit 退出LLDB。
+help 列出命令类型。
+cd, pwd和make 和shell里一样。
+shell 快速启动shell。
+clear 清除一处断点。
+info break和info watch 显示关于断点和监视点(watch point)的信息。 
+attach -p pid 将GDB绑定到一个正在运行的进程上，以对它进行调试。
+detach 将GDB与进程解绑。
+list 列出接下来的10行源代码。加一个"-"可以列出之前的10行源代码。
